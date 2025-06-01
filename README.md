@@ -1,13 +1,13 @@
 # 📘 Software Design Course – Semester Project
 
 ## 🧑‍🤝‍🧑 Team Members
-| Name                  | Student Number | Role               |
-| --------------------- | -------------- | ------------------ |
-| Athanasiou Dimitrios  | 3452           | Project Manager    |
-| Gerakopoulos Christos | 3373           | Testing            |
-| Kleidonaris Dimitrios | 2850           | Backend Developer  |
-| Blatsioti Christina   | 3405           | Frontend Developer |
-| Tsiftsis Theoklitos   | 3247           | Frontend Developer |
+| Name                  | Student Number | Role                                   |
+| --------------------- | -------------- | -------------------------------------- |
+| Athanasiou Dimitrios  | 3452           | Project Manager - Backend Developer    |
+| Gerakopoulos Christos | 3373           | Tester                                 |
+| Kleidonaris Dimitrios | 2850           | Backend Developer                      |
+| Blatsioti Christina   | 3405           | Frontend Developer                     |
+| Tsiftsis Theoklitos   | 3247           | Frontend Developer                     |
 
 ---
 
