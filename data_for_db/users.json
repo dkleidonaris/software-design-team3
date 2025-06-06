@@ -1,0 +1,102 @@
+[
+  {
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "email": "alice@example.com",
+    "hashedPassword": "$2b$10$WlZME8Vb6k9F2h3xdXE0eOXWbb2SmAHCFMgqO5RnDl2DfZ5mwQ4yG",
+    "age": 28,
+    "gender": "Female",
+    "weight": 63.5,
+    "height": 165.2
+  },
+  {
+    "firstName": "Bob",
+    "lastName": "Smith",
+    "email": "bob@example.com",
+    "hashedPassword": "$2b$10$JlvC8Hw0kNz8FMe1jIq.KedYdSMq5PXv1btGjgj8OXl1Fi8zOOCzm",
+    "age": 32,
+    "gender": "Male",
+    "weight": 75.0,
+    "height": 178.3
+  },
+  {
+    "firstName": "Carol",
+    "lastName": "Lee",
+    "email": "carol@example.com",
+    "hashedPassword": "$2b$10$hHlQWzMYPjZgW3XOwH8YcOqzLTZ38BOfHKFw5Ocd3Ot.FV.zKAz32",
+    "age": 25,
+    "gender": "Female",
+    "weight": 58.4,
+    "height": 160.0
+  },
+  {
+    "firstName": "David",
+    "lastName": "Miller",
+    "email": "david@example.com",
+    "hashedPassword": "$2b$10$Bv1tx3rI9RKY.C.zXjS5V.qT6aDLzR.WdO/ewcoYQtkgw3FDk6Xxq",
+    "age": 45,
+    "gender": "Male",
+    "weight": 82.0,
+    "height": 180.5
+  },
+  {
+    "firstName": "Eva",
+    "lastName": "Brown",
+    "email": "eva@example.com",
+    "hashedPassword": "$2b$10$AhFvNMRYJtGcw8u5M2G4JeL7UyXVxF.MiXr3Y4UuEevk1lIuKcLMq",
+    "age": 37,
+    "gender": "Female",
+    "weight": 67.3,
+    "height": 168.8
+  },
+  {
+    "firstName": "Frank",
+    "lastName": "Wong",
+    "email": "frank@example.com",
+    "hashedPassword": "$2b$10$K3lEIGcLkkIHuhvMQT5wVOMLZlfPbY3PfgsEzpQalQ7jFJ62HF5pe",
+    "age": 30,
+    "gender": "Male",
+    "weight": 77.1,
+    "height": 175.0
+  },
+  {
+    "firstName": "Grace",
+    "lastName": "Chen",
+    "email": "grace@example.com",
+    "hashedPassword": "$2b$10$RvlJ4I8AERm5EK0S3GZtkeTuKFoFYSGGHxXilUlA.b1EheevpXE5W",
+    "age": 22,
+    "gender": "Female",
+    "weight": 55.0,
+    "height": 158.5
+  },
+  {
+    "firstName": "Henry",
+    "lastName": "Clark",
+    "email": "henry@example.com",
+    "hashedPassword": "$2b$10$1bFZRp.cI5V/gz/q7mkJdOdjGLRh3hIBy93UGhHGFV25k1AG4xS8S",
+    "age": 40,
+    "gender": "Male",
+    "weight": 85.5,
+    "height": 183.2
+  },
+  {
+    "firstName": "Irene",
+    "lastName": "Davis",
+    "email": "irene@example.com",
+    "hashedPassword": "$2b$10$EsIZJpN6MdV6F3Gp4rxUv.9DEgb/MUtIlznZG6MEB0r0IQGb2Lmyu",
+    "age": 29,
+    "gender": "Female",
+    "weight": 60.8,
+    "height": 162.0
+  },
+  {
+    "firstName": "Jack",
+    "lastName": "Taylor",
+    "email": "jack@example.com",
+    "hashedPassword": "$2b$10$JZ0mLxOXF4JeQ9VE0heGqenx6lg6MBIuvwlx3ZD4PoXKaGPd9GRxq",
+    "age": 35,
+    "gender": "Male",
+    "weight": 80.2,
+    "height": 179.5
+  }
+]
