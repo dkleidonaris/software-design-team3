@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const rateLimiter = require('express-rate-limit');
-const { missingFieldResponse } = require('../utils/responses');
+const { checkMissingFields } = require('../utils/validation');
 const { authMiddleware } = require('../middleware/authMiddleware');
 
 const invalidCredentialsResponse = (res) => res.status(401).json({ error: "Invalid credentials", errorType: "invalidCredentials" });
@@ -29,16 +29,16 @@ const loginLimiter = rateLimiter({
 
 router.post('/login', loginLimiter, async (req, res) => {
     try {
-        const { email, password } = req.body;
+        fields = req.body || {};
 
-        if (!email) {
-            return missingFieldResponse(res, 'Email');
-        }
+        const requiredFields = {
+            email: 'Email',
+            password: 'Password'
+        };
 
-        if (!password) {
-            return missingFieldResponse(res, 'Password');
+        checkMissingFields(res, fields, requiredFields);
 
-        }
+        const { email, password } = fields;
 
         const user = await User.findOne({ email: email });
 
