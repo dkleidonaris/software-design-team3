@@ -29,4 +29,11 @@ userSchema.pre('save', async function (next) {
     }
 });
 
+userSchema.set('toJSON', {
+    transform: (doc, ret) => {
+        delete ret.hashedPassword;  // remove the hashedPassword field
+        return ret;
+    }
+});
+
 module.exports = mongoose.model("user", userSchema);
