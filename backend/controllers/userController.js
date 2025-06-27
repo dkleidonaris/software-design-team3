@@ -1,6 +1,7 @@
 const User = require('../models/user');
 const { checkMissingFields } = require('../utils/validation');
 const mongoose = require("mongoose");
+const bcrypt = require('bcrypt');
 
 const createUser = async (req, res) => {
   try {
@@ -54,6 +55,12 @@ const updateUser = async (req, res) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
       return res.status(400).json({ error: 'Invalid user ID format' });
+    }
+
+    if (req.body.hashedPassword) {
+      const saltRounds = 10;
+      const hashed = await bcrypt.hash(req.body.hashedPassword, saltRounds);
+      req.body.hashedPassword = hashed;
     }
 
     const user = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
