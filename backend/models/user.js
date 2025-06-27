@@ -12,8 +12,21 @@ const userSchema = new mongoose.Schema(
         gender: { type: String, enum: ['male', 'female'], required: true },
         weight: { type: Number, required: true }, //kg
         height: { type: Number, required: true }, //cm
-        currentDietPlan: { type: Schema.Types.ObjectID, ref: 'dietPlan'}
+        currentDietPlan: { type: Schema.Types.ObjectID, ref: 'dietPlan' }
     }
 );
+
+userSchema.pre('save', async function (next) {
+    if (!this.isModified('hashedPassword')) return next(); // skip if not modified
+
+    try {
+        const saltRounds = 10;
+        const hashed = await bcrypt.hash(this.hashedPassword, saltRounds);
+        this.hashedPassword = hashed;
+        next();
+    } catch (err) {
+        next(err);
+    }
+});
 
 module.exports = mongoose.model("user", userSchema);
