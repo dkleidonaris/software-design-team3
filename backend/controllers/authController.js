@@ -30,7 +30,7 @@ const login = async (req, res) => {
             return;
         }
 
-        accessToken = jwt.sign({ _id: user._id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '15m' });
+        accessToken = jwt.sign({ _id: user._id, email: user.email, firstName: user.firstName }, process.env.JWT_SECRET, { expiresIn: '15m' });
 
         res.status(200).json({ accessToken: accessToken });
     } catch (err) {
@@ -39,7 +39,7 @@ const login = async (req, res) => {
 }
 
 const checkAuthStatus = async (req, res) => {
-    res.status(200).json(req.user );
+    res.status(200).json(req.user);
 };
 
 module.exports = {
