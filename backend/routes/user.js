@@ -1,16 +1,16 @@
 const router = require('express').Router();
-const User = require('../models/user');
-const bcrypt = require('bcrypt');
-const { authMiddleware } = require('../middleware/authMiddleware');
+const {
+  createUser,
+  getUsers,
+  getUserById,
+  updateUser,
+  deleteUser
+} = require('../controllers/userController');
 
-//gia na testaroume mono - dinei olous tous users
-router.get('/', authMiddleware, async (req, res) => {
-  try {
-    const users = await User.find();
-    res.status(200).json(users);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+router.post('/', createUser);      //create
+router.get('/', getUsers);         //read all
+router.get('/:id', getUserById);   //read one by user ID
+router.put('/:id', updateUser);    //update
+router.delete('/:id', deleteUser); //delete
 
 module.exports = router;
