@@ -25,7 +25,7 @@ const authorizePersonalUserActionMiddleware = async (req, res, next) => {
             return res.status(401).json({ error: 'Unauthorized: No user info in token' });
         }
 
-        if (req.user._id !== req.params.id) {
+        if (req.user._id !== req.params.userId) {
             return res.status(403).json({ error: 'Forbidden: You are not allowed to perform this action' });
         }
 

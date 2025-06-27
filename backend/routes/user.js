@@ -13,8 +13,8 @@ const {
 
 router.post('/', createUser);      //create
 router.get('/', authMiddleware, getUsers);         //read all
-router.get('/:id', authMiddleware, authorizePersonalUserActionMiddleware, getUserById);   //read one by user ID
-router.put('/:id', authMiddleware, authorizePersonalUserActionMiddleware, updateUser);    //update
-router.delete('/:id', authMiddleware, authorizePersonalUserActionMiddleware, deleteUser); //delete
+router.get('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, getUserById);   //read one by user ID
+router.put('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, updateUser);    //update
+router.delete('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, deleteUser); //delete
 
 module.exports = router;

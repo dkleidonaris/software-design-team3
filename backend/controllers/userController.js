@@ -38,11 +38,11 @@ const getUsers = async (req, res) => {
 
 const getUserById = async (req, res) => {
   try {
-    if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+    if (!mongoose.Types.ObjectId.isValid(req.params.userId)) {
       return res.status(400).json({ error: 'Invalid user ID format' });
     }
 
-    const user = await User.findById(req.params.id).populate('currentDietPlan');
+    const user = await User.findById(req.params.userId).populate('currentDietPlan');
 
     if (!user) return res.status(404).json({ error: 'User not found' });
     res.json(user);
@@ -53,7 +53,7 @@ const getUserById = async (req, res) => {
 
 const updateUser = async (req, res) => {
   try {
-    if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+    if (!mongoose.Types.ObjectId.isValid(req.params.userId)) {
       return res.status(400).json({ error: 'Invalid user ID format' });
     }
 
@@ -63,7 +63,7 @@ const updateUser = async (req, res) => {
       req.body.hashedPassword = hashed;
     }
 
-    const user = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    const user = await User.findByIdAndUpdate(req.params.userId, req.body, { new: true });
     if (!user) return res.status(404).json({ error: 'User not found' });
     res.json(user);
   } catch (err) {
@@ -73,11 +73,11 @@ const updateUser = async (req, res) => {
 
 const deleteUser = async (req, res) => {
   try {
-    if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+    if (!mongoose.Types.ObjectId.isValid(req.params.userId)) {
       return res.status(400).json({ error: 'Invalid user ID format' });
     }
 
-    const user = await User.findByIdAndDelete(req.params.id);
+    const user = await User.findByIdAndDelete(req.params.userId);
     if (!user) return res.status(404).json({ error: 'User not found' });
     res.json({ message: 'User deleted' });
   } catch (err) {
