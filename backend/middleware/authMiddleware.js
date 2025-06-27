@@ -21,7 +21,7 @@ function authMiddleware(req, res, next) {
 const authorizePersonalUserActionMiddleware = async (req, res, next) => {
     try {
 
-        if (!req.params.id) {
+        if (!req.params.userId) {
             return res.status(401).json({ error: 'Unauthorized: No user info in token' });
         }
 
