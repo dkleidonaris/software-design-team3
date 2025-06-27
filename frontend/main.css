@@ -1,0 +1,46 @@
+.loggedOutContent {
+    display: none;
+}
+
+.loggedInContent {
+    display: none;
+}
+
+.header-fixed,
+.navbar-sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 1050;
+}
+
+.header-fixed {
+    top: 0;
+}
+
+.navbar-sticky {
+    top: 72px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f252d;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ccc;
+    margin: 0 10px;
+}
+
+.header-links a {
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}

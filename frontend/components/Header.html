@@ -1,0 +1,19 @@
+<nav class="navbar navbar-light bg-light shadow-sm header-fixed">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="#" class="navbar-brand">
+            <img src="https://via.placeholder.com/50" alt="Logo" />
+        </a>
+        <div class="d-flex align-items-center header-links">
+            <a href="#" class="me-3">My Diet</a>
+            <a href="#" class="me-3">Daily Log</a>
+            <a href="" class="me-3 fw-bold loggedInContent" data="firstName"></a>
+            <a href="#" class="btn btn-success">Create Account</a>
+            <button id="logoutBtn" class="loggedInContent">Logout</button>
+        </div>
+    </div>
+    <script>
+        $('#logoutBtn').on('click', function () {
+            logout();
+        });
+    </script>
+</nav>
