@@ -27,6 +27,18 @@ function checkAuthStatus() {
     });
 }
 
+async function ensureLoggedIn() {
+  const isAuthenticated = await checkAuthStatus();
+
+  if (!isAuthenticated) {
+    // Save the current URL (e.g. /dashboard.html?section=2)
+    localStorage.setItem('redirectAfterLogin', window.location.href);
+    
+    // Redirect to login
+    window.location.href = '/login';
+  }
+}
+
 function bindLoginHandler() {
     $('#login-btn').on('click', function () {
         const email = $('#email').val().trim();
@@ -44,8 +56,7 @@ function bindLoginHandler() {
             data: JSON.stringify({ email: email, password: password }),
             success: function (response) {
                 localStorage.setItem('token', response.accessToken);
-                alert('Login successful!');
-                window.location.href = '/';
+                window.location.href = localStorage.getItem('redirectAfterLogin') || '/';
             },
             error: function (xhr) {
                 const err = xhr.responseJSON?.message || 'Login failed. Please try again.';
@@ -79,6 +90,7 @@ function logout() {
 
 export {
     checkAuthStatus,
+    ensureLoggedIn,
     bindLoginHandler,
     bindLogoutHandler
 };
