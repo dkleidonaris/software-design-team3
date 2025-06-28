@@ -18,7 +18,7 @@
 }
 
 .navbar-sticky {
-    top: 72px;
+    top: 100px;
 }
 
 footer {
@@ -43,4 +43,13 @@ footer a {
 
 .header-links a:hover {
     text-decoration: underline;
+}
+
+.navbar-brand img {
+  width: 90px;
+  height: auto;
+}
+
+body {
+  padding-top: 220px; 
 }
