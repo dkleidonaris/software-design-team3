@@ -16,8 +16,12 @@ export default defineConfig({
     port: 5173,
     open: true, // ανοίγει browser αυτόματα
     watch: {
-      usePolling: true // αν σε Linux/WSL έχεις πρόβλημα με file change detection
-    }
+      usePolling: true, // αν σε Linux/WSL έχεις πρόβλημα με file change detection,
+      paths: ['components/*.html']
+    },
+    fs: {
+      allow: ['..'],
+    },
   },
 
   preview: {
