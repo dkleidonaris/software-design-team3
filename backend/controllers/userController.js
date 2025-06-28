@@ -20,6 +20,11 @@ const createUser = async (req, res) => {
 
     if (checkMissingFields(res, fields, requiredFields)) return;
 
+    const existingUser = await User.findOne({ email: fields.email });
+    if (existingUser) {
+      return res.status(409).json({ error: "A user with this email already exists." });
+    }
+
     const user = await User.create(fields);
     res.status(201).json(user);
   } catch (err) {
