@@ -1,7 +1,16 @@
+import 'bootstrap';
 import $ from 'jquery';
 window.$ = $;
-import 'bootstrap';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../css/main.css';
+
+import { loadTemplates } from './include.js';
+import { checkAuthStatus, bindLogoutHandler } from './auth.js';
+import { setFavicon } from './helpers.js';
+
+// Auto send Auth Header with ajax requests
 $.ajaxSetup({
     beforeSend: function (xhr) {
         const token = localStorage.getItem('token');
@@ -11,30 +20,11 @@ $.ajaxSetup({
     }
 });
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import '../css/main.css';
-
-import { loadTemplates } from './include.js';
-
-const API_URL = import.meta.env.VITE_API_URL;
-import { checkAuthStatus, bindLogoutHandler } from './auth.js';
-
 async function init() {
     setFavicon('/assets/img/favicon.ico');
     await loadTemplates();
     bindLogoutHandler();
     await checkAuthStatus();
-}
-
-function setFavicon(url) {
-    let link = document.querySelector("link[rel~='icon']");
-    if (!link) {
-        link = document.createElement('link');
-        link.rel = 'icon';
-        document.head.appendChild(link);
-    }
-    link.href = url;
 }
 
 $(document).ready(function () {

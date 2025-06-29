@@ -1,8 +1,11 @@
 import $ from 'jquery';
-const API_URL = import.meta.env.VITE_API_URL;
-import { ensureLoggedIn } from './auth.js';
 
-ensureLoggedIn();
+import './main.js';
+
+import { setTitle } from './helpers';
+import { API_URL } from './config.js';
+
+setTitle();
 
 $(document).ready(function () {
     const container = $("#plans-container");
@@ -32,9 +35,10 @@ $(document).ready(function () {
                     scheduleHtml += `<h5 class="mt-3">${day}</h5><ul class="list-group mb-2">`;
                     entries.forEach(entry => {
                         const meal = entry.meal;
-                        const itemsList = meal.items.map(item => `<li>${item}</li>`).join('');
+                        if (meal) {
+                            const itemsList = meal.items.map(item => `<li>${item}</li>`).join('');
 
-                        scheduleHtml += `
+                            scheduleHtml += `
                         <li class="list-group-item">
                             <div><strong>${entry.timeOfDay}</strong>: ${meal.name}</div>
                             <ul class="mb-1 small">
@@ -49,6 +53,7 @@ $(document).ready(function () {
                                 </li>
                             </ul>
                         </li>`;
+                        }
                     });
 
                     scheduleHtml += '</ul>';

@@ -1,5 +1,11 @@
 import $ from 'jquery';
-const API_URL = import.meta.env.VITE_API_URL;
+
+import './main.js';
+
+import { setTitle } from './helpers';
+import { API_URL } from './config.js';
+
+setTitle();
 
 $('form').on('submit', function (event) {
     event.preventDefault();
