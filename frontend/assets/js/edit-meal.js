@@ -9,7 +9,7 @@ import { getQueryParam, setTitle } from './helpers.js'; // You should have a hel
 ensureLoggedIn();
 setTitle('Edit meal');
 
-const mealId = getQueryParam("mealId");
+const mealId = getQueryParam("id");
 
 if (!mealId) {
     alert("Meal ID missing from URL");

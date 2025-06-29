@@ -62,7 +62,7 @@ function renderMealsPage(page) {
             </p>
             <h6>Ingredients:</h6>
             <ul>${itemsList}</ul>
-            <a href="edit-meal?mealId=${meal._id}" class="btn btn-outline-primary mt-auto align-self-start">Edit</a>
+            <a href="edit-meal?id=${meal._id}" class="btn btn-outline-primary mt-auto align-self-start">Edit</a>
           </div>
         </div>
       </div>`;
