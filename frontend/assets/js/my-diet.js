@@ -72,6 +72,13 @@ function fetchAndRenderDietPlans() {
 function updateUserDietPlan(planId) {
     ensureLoggedIn();
 
+    const $btn = $(`.select-plan-btn[data-id="${planId}"]`);
+    $btn
+        .prop('disabled', true)
+        .removeClass('btn-success')
+        .addClass('btn-secondary')
+        .html(`<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Updating...`);
+
     $.ajax({
         url: `${API_URL}/users/current/dietPlan`,
         method: 'PUT',
@@ -82,7 +89,14 @@ function updateUserDietPlan(planId) {
             fetchAndRenderDietPlans();
         },
         error: function () {
+            $btn
+                .prop('disabled', false)
+                .removeClass('btn-secondary')
+                .addClass('btn-success')
+                .text('Choose');
+
             alert("Failed to update diet plan.");
         }
     });
 }
+
