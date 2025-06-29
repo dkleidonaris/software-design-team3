@@ -26,7 +26,7 @@ async function fetchCurrentUser() {
 
 function fetchAndRenderDietPlans() {
     $.get(`${API_URL}/dietPlans`, function (plans) {
-        const $main = $('main');
+        const $main = $('.content');
         $main.empty();
 
         if (!plans.length) {
@@ -45,7 +45,9 @@ function fetchAndRenderDietPlans() {
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm ${isSelected ? 'border-success' : ''}">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">${plan.title}</h5>
+                           <h5 class="card-title">
+                                <a href="plans?id=${plan._id}" class="text-decoration-none">${plan.title}</a>
+                            </h5>
                             <p class="card-text flex-grow-1">${plan.description}</p>
                             <button class="btn ${btnClass} mt-3 select-plan-btn" data-id="${plan._id}" ${isSelected ? 'disabled' : ''}>${btnText}</button>
                         </div>
@@ -54,7 +56,6 @@ function fetchAndRenderDietPlans() {
             $row.append(card);
         });
 
-        $main.append('<h2 class="mb-4">Available Diet Plans</h2>');
         $main.append($row);
 
         $('.select-plan-btn').on('click', function () {
