@@ -16,6 +16,8 @@ fetchAndRenderDietPlans();
 
 
 async function fetchCurrentUser() {
+    ensureLoggedIn();
+
     try {
         const response = await $.get(`${API_URL}/users/current`);
         currentPlanId = response.currentDietPlan || null;
@@ -25,6 +27,8 @@ async function fetchCurrentUser() {
 }
 
 function fetchAndRenderDietPlans() {
+    ensureLoggedIn();
+
     $.get(`${API_URL}/dietPlans`, function (plans) {
         const $main = $('.content');
         $main.empty();
@@ -66,6 +70,8 @@ function fetchAndRenderDietPlans() {
 }
 
 function updateUserDietPlan(planId) {
+    ensureLoggedIn();
+
     $.ajax({
         url: `${API_URL}/users/current/dietPlan`,
         method: 'PUT',
