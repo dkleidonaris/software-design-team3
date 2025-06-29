@@ -8,13 +8,22 @@ const {
   getUsers,
   getUserById,
   updateUser,
-  deleteUser
+  deleteUser,
+  updateCurrentUserDietPlan,
+  getCurrentUser
 } = require('../controllers/userController');
 
-router.post('/', createUser);      //create
-router.get('/', authMiddleware, getUsers);         //read all
-router.get('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, getUserById);   //read one by user ID
-router.put('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, updateUser);    //update
-router.delete('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, deleteUser); //delete
+router.post('/', createUser);
+router.get('/', authMiddleware, getUsers);
+
+// ✅ Specific routes first
+router.get('/current', authMiddleware, getCurrentUser);
+router.put('/current/dietPlan', authMiddleware, updateCurrentUserDietPlan);
+
+// 🔻 Dynamic routes after
+router.get('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, getUserById);
+router.put('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, updateUser);
+router.delete('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, deleteUser);
+
 
 module.exports = router;
