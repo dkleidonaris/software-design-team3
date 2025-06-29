@@ -18,7 +18,7 @@ import '../css/main.css';
 import { loadTemplates } from './include.js';
 
 const API_URL = import.meta.env.VITE_API_URL;
-import { checkAuthStatus, bindLoginHandler, bindLogoutHandler } from './auth.js';
+import { checkAuthStatus, bindLogoutHandler } from './auth.js';
 
 async function init() {
     setFavicon('/assets/img/favicon.ico');
