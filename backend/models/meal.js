@@ -11,6 +11,7 @@ const mealSchema = new mongoose.Schema(
         protein: { type:Number, required: true },
         weight: { type:Number, required: true }, //g
         category: { type:String },
+        img: { type:String },
         items: [{ type:String }],
     }
 );
