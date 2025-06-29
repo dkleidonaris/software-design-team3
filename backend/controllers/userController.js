@@ -90,4 +90,48 @@ const deleteUser = async (req, res) => {
   }
 };
 
-module.exports = { createUser, getUsers, getUserById, updateUser, deleteUser };
+const getCurrentUser = async (req, res) => {
+  try {
+    const userId = req.user._id;
+
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    res.json(user);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
+const updateCurrentUserDietPlan = async (req, res) => {
+  try {
+    const userId = req.user._id;
+    const { currentDietPlan } = req.body;
+
+    if (!currentDietPlan) {
+      return res.status(400).json({ error: 'No diet plan ID provided.' });
+    }
+
+    const updatedUser = await User.findByIdAndUpdate(
+      userId,
+      { currentDietPlan },
+      { new: true }
+    );
+
+    if (!updatedUser) {
+      return res.status(404).json({ error: 'User not found.' });
+    }
+
+    res.status(200).json({
+      message: 'Diet plan updated successfully.',
+      currentDietPlan: updatedUser.currentDietPlan
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
+module.exports = { createUser, getUsers, getUserById, updateUser, deleteUser, updateCurrentUserDietPlan, getCurrentUser };
