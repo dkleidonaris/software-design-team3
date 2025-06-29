@@ -23,5 +23,5 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/dietPlans", dietPlanRoutes);
-app.use("/api/dailyLog", dailyLogRoutes);
-app.use("/api/meal", mealRoutes);
+app.use("/api/dailyLogs", dailyLogRoutes);
+app.use("/api/meals", mealRoutes);
