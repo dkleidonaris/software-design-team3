@@ -14,15 +14,18 @@
 }
 
 .header-fixed {
-    top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
 }
 
 .navbar-sticky {
-    top: 100px;
+  position: sticky;
+  top: 56px; /* height of .header-fixed */
+  z-index: 1049;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #1f252d;
@@ -50,7 +53,16 @@ footer a {
   height: auto;
 }
 
-body {
-  padding-top: 220px;
-  padding-bottom: 220px;
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
