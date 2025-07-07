@@ -19,6 +19,7 @@ $('form').on('submit', function (event) {
         gender: $(this).find('#gender').val(),
         weight: $(this).find('#weight').val(),
         height: $(this).find('#height').val(),
+        activityLevel: $(this).find('#activityLevel').val(),
     };
 
     $.ajax({

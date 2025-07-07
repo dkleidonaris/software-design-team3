@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema(
         gender: { type: String, enum: ['male', 'female'], required: true },
         weight: { type: Number, required: true }, //kg
         height: { type: Number, required: true }, //cm
+        activityLevel: { type: String, enum: ['sedentary', 'light', 'moderate', 'very', 'extra'], required: true },
         currentDietPlan: { type: Schema.Types.ObjectID, ref: 'dietPlan' }
     }
 );

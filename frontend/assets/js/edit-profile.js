@@ -40,6 +40,7 @@ function fetchCurrentUser() {
             $('#gender').val(user.gender);
             $('#weight').val(user.weight);
             $('#height').val(user.height);
+            $('#activityLevel').val(user.activityLevel);
 
             $('#user-spinner').addClass('hidden');
             $('#edit-user-form').show();
@@ -67,7 +68,8 @@ function updateCurrentUser() {
         age: Number($('#age').val()),
         gender: $('#gender').val(),
         weight: Number($('#weight').val()),
-        height: Number($('#height').val())
+        height: Number($('#height').val()),
+        activityLevel: $('#activityLevel').val()
     };
 
     const password = $('#password').val().trim();
