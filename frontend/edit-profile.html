@@ -78,6 +78,22 @@
 
             <button type="submit" class="btn btn-primary" id="save-btn">Save Changes</button>
         </form>
+
+        <!-- Calorie Intake Display Section -->
+        <div id="calorie-info" class="mt-5" style="display: none;">
+            <h4 class="mb-3">Daily Calorie Needs</h4>
+            <div class="card">
+                <div class="card-body">
+                    <p class="mb-2">Based on your profile information, your estimated daily calorie needs for maintaining weight are:</p>
+                    <div class="d-flex align-items-center">
+                        <h3 class="me-3" id="calorie-value">0</h3>
+                        <span>calories per day</span>
+                    </div>
+                    <p class="text-muted mt-2 mb-1"><small>This is calculated using the Mifflin-St Jeor Equation.</small></p>
+                    <p class="text-muted mb-0"><small>Note: This is an estimate. Individual needs may vary.</small></p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <div data-include="Footer"></div>

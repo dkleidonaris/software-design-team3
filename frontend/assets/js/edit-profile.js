@@ -27,7 +27,7 @@ $(document).ready(() => {
 function fetchCurrentUser() {
     ensureLoggedIn();
 
-    $('#user-spinner').show();
+    $('#user-spinner').removeClass('hidden');
     $('#edit-user-form').hide();
 
     $.ajax({
@@ -45,7 +45,7 @@ function fetchCurrentUser() {
             $('#height').val(user.height);
             $('#activityLevel').val(user.activityLevel || 'moderate');
 
-            $('#user-spinner').hide();
+            $('#user-spinner').addClass('hidden');
             $('#edit-user-form').show();
             
             updateCalorieDisplay();
