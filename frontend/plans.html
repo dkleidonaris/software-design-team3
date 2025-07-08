@@ -34,7 +34,15 @@
     .plan-description {
       color: #555;
     }
+    body {
+      visibility: hidden;
+    }
   </style>
+  <script>
+    setTimeout(() => {
+      document.body.style.visibility = 'visible';
+    }, 400);
+  </script>
 </head>
 
 <body>

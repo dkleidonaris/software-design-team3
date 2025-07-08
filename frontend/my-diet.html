@@ -9,6 +9,7 @@
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
+            visibility: hidden;
         }
 
         .card h5 {
@@ -19,6 +20,11 @@
             font-size: 0.95rem;
         }
     </style>
+    <script>
+        setTimeout(() => {
+        document.body.style.visibility = 'visible';
+        }, 400);
+    </script>
 </head>
 
 <body>

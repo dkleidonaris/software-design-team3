@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const token = localStorage.getItem('token');
 
   if (!token) {
-    // Not logged in → redirect to My Diet page
     window.location.href = '/my-diet.html';
     return;
   }
@@ -21,10 +20,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const user = await response.json();
 
     if (user.currentDietPlan && user.currentDietPlan._id) {
-      // Redirect to the exact diet plan page with query param
       window.location.href = `/plans?id=${user.currentDietPlan._id}`;
     } else {
-      // No diet plan chosen → redirect to My Diet page
       window.location.href = '/my-diet.html';
     }
   } catch (err) {

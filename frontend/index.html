@@ -11,11 +11,18 @@
       height: 200px;
       object-fit: cover;
     }
+    body {
+      visibility: hidden;
+    }
   </style>
+  <script>
+    setTimeout(() => {
+      document.body.style.visibility = 'visible';
+    }, 400);
+  </script>
 </head>
 
 <body>
-
   <!-- Header -->
   <div data-include="Header"></div>
 
