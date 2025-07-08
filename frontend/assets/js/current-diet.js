@@ -1,0 +1,34 @@
+import { API_URL } from './config.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const token = localStorage.getItem('token');
+
+  if (!token) {
+    // Not logged in → redirect to My Diet page
+    window.location.href = '/my-diet.html';
+    return;
+  }
+
+  try {
+    const response = await fetch(`${API_URL}/users/current`, {
+      headers: {
+        'Authorization': 'Bearer ' + token,
+      },
+    });
+
+    if (!response.ok) throw new Error('Failed to fetch current user');
+
+    const user = await response.json();
+
+    if (user.currentDietPlan && user.currentDietPlan._id) {
+      // Redirect to the exact diet plan page with query param
+      window.location.href = `/plans?id=${user.currentDietPlan._id}`;
+    } else {
+      // No diet plan chosen → redirect to My Diet page
+      window.location.href = '/my-diet.html';
+    }
+  } catch (err) {
+    console.error('Error fetching user or diet plan:', err);
+    window.location.href = '/my-diet.html';
+  }
+});
