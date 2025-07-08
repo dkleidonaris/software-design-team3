@@ -94,7 +94,14 @@ const getCurrentUser = async (req, res) => {
   try {
     const userId = req.user._id;
 
-    const user = await User.findById(userId);
+    const user = await User.findById(userId)
+      .populate({
+        path: 'currentDietPlan',
+        populate: {
+          path: 'schedule.meal',
+          model: 'meal'
+        }
+      });
 
     if (!user) {
       return res.status(404).json({ error: 'User not found' });

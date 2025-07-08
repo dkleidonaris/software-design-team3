@@ -2,17 +2,20 @@ const router = require('express').Router();
 const {
   createDailyLog,
   getAllDailyLogs,
-  getDailyLogsByUser,
+  getDailyLogs,
   getDailyLogById,
+  getDailyLogByDate,
   updateDailyLog,
   deleteDailyLog
 } = require('../controllers/dailyLogController');
+const { authMiddleware,
+  authorizePersonalUserActionMiddleware
+} = require('../middleware/authMiddleware');
 
-router.post('/', createDailyLog);                //create
-router.get('/', getAllDailyLogs);                //read all
-router.get('/user/:userId', getDailyLogsByUser); //read by user
-router.get('/:id', getDailyLogById);             //read one by log ID
-router.put('/:id', updateDailyLog);              //update
-router.delete('/:id', deleteDailyLog);           //delete
+router.post('/', authMiddleware, createDailyLog);
+router.get('/', authMiddleware, getAllDailyLogs);
+router.get('/:id', authMiddleware, getDailyLogById);
+router.put('/:id', authMiddleware, updateDailyLog);
+router.delete('/:id', authMiddleware, deleteDailyLog);
 
 module.exports = router;

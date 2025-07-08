@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Daily Log</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" src="/assets/js/daily-log.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        canvas {
+            max-height: 220px;
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .card h5 {
+            font-weight: bold;
+        }
+
+        .date-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .date-controls input[type="date"] {
+            max-width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div data-include="Header"></div>
+
+    <main class="container py-5">
+        <h2 class="mb-4">My Daily Log</h2>
+
+        <div class="date-controls">
+            <button id="prev-date" class="btn btn-outline-secondary">&larr;</button>
+            <input type="date" id="log-date" class="form-control" />
+            <button id="next-date" class="btn btn-outline-secondary">&rarr;</button>
+        </div>
+
+        <div class="content">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div data-include="Footer"></div>
+
+</body>
+
+</html>
