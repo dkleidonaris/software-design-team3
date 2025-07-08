@@ -8,7 +8,9 @@ import '../css/main.css';
 
 import { loadTemplates } from './include.js';
 import { checkAuthStatus, bindLogoutHandler } from './auth.js';
-import { setFavicon } from './helpers.js';
+import { setFavicon, setTitle} from './helpers.js';
+
+setTitle();
 
 // Auto send Auth Header with ajax requests
 $.ajaxSetup({

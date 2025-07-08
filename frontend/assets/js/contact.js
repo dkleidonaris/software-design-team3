@@ -3,6 +3,10 @@ import emailjs from '@emailjs/browser';
 
 import './main.js';
 
+import { setTitle } from './helpers.js';
+
+setTitle('Contact');
+
 $(document).ready(() => {
     $('#contact-form').on('submit', function (e) {
         e.preventDefault();
