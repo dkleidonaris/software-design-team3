@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Diet Plans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script type="module" src="/assets/js/main.js"></script>
+  <script type="module" src="/assets/js/plans.js"></script>
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .plan-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      transition: box-shadow 0.3s;
+    }
+    .plan-card:hover {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .plan-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    .plan-description {
+      color: #555;
+    }
+    body {
+      visibility: hidden;
+    }
+
+    /* νέο CSS για τον πίνακα */
+    table.table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+    table.table th,
+    table.table td {
+      vertical-align: middle;
+      padding: 5px;
+      word-wrap: break-word;
+    }
+    table.table th:first-child {
+      background-color: #e9ecef;
+      text-transform: uppercase;
+      width: 80px;
+    }
+  </style>
+
+  <script>
+    setTimeout(() => {
+      document.body.style.visibility = 'visible';
+    }, 400);
+  </script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div data-include="Header"></div>
+
+  <main class="container py-5">
+    <h2 class="mb-4 text-center allPlans">Explore Our Diet Plans</h2>
+    <div id="plans-container">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="Footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+[{
+  "_id": {
+    "$oid": "685ebdabb64d41a4be124e1e"
+  },
+  "user": {
+    "$oid": "685ef510b210f95c32a35c86"
+  },
+  "date": {
+    "$date": "2025-06-26T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "Only had breakfast today."
+},
+{
+  "_id": {
+    "$oid": "686d6af4be2805f901101558"
+  },
+  "user": {
+    "$oid": "685ef510b210f95c32a35c86"
+  },
+  "date": {
+    "$date": "2025-07-08T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686d6b2cbe2805f9011015c5"
+  },
+  "user": {
+    "$oid": "685ef510b210f95c32a35c86"
+  },
+  "date": {
+    "$date": "2025-07-07T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686d6b90be2805f901101616"
+  },
+  "user": {
+    "$oid": "685ef510b210f95c32a35c86"
+  },
+  "date": {
+    "$date": "2025-07-06T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686d81f21b51145114a5b2ea"
+  },
+  "user": {
+    "$oid": "685feae50d6695f1dc60f49a"
+  },
+  "date": {
+    "$date": "2025-07-08T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686d82201b51145114a5b415"
+  },
+  "user": {
+    "$oid": "685feae50d6695f1dc60f49a"
+  },
+  "date": {
+    "$date": "2025-07-07T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686d82221b51145114a5b431"
+  },
+  "user": {
+    "$oid": "685feae50d6695f1dc60f49a"
+  },
+  "date": {
+    "$date": "2025-07-06T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686e635ef24c1ff835620d30"
+  },
+  "user": {
+    "$oid": "685feae50d6695f1dc60f49a"
+  },
+  "date": {
+    "$date": "2025-07-09T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686e8951be2805f901101650"
+  },
+  "user": {
+    "$oid": "685ef510b210f95c32a35c86"
+  },
+  "date": {
+    "$date": "2025-07-09T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "trst",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686e8965be2805f9011016f0"
+  },
+  "user": {
+    "$oid": "685ef510b210f95c32a35c86"
+  },
+  "date": {
+    "$date": "2025-07-05T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686e8968be2805f90110170c"
+  },
+  "user": {
+    "$oid": "685ef510b210f95c32a35c86"
+  },
+  "date": {
+    "$date": "2025-07-04T00:00:00.000Z"
+  },
+  "totalCalories": 0,
+  "eatMorning": true,
+  "eatNoon": true,
+  "eatEvening": true,
+  "extraSnacks": [],
+  "notes": "",
+  "__v": 0
+}]

@@ -1,12 +1,10 @@
 const router = require('express').Router();
-const jwt = require('jsonwebtoken');
-const User = require('../models/user');
-const bcrypt = require('bcrypt');
 const rateLimiter = require('express-rate-limit');
-const { missingFieldResponse } = require('../utils/responses');
 const { authMiddleware } = require('../middleware/authMiddleware');
-
-const invalidCredentialsResponse = (res) => res.status(401).json({ error: "Invalid credentials", errorType: "invalidCredentials" });
+const {
+    login,
+    checkAuthStatus
+} = require('../controllers/authController');
 
 const loginLimiter = rateLimiter({
     windowMs: 1 * 60 * 1000, // 1 minute
@@ -27,41 +25,8 @@ const loginLimiter = rateLimiter({
     }
 });
 
-router.post('/login', loginLimiter, async (req, res) => {
-    try {
-        const { email, password } = req.body;
+router.post('/login', loginLimiter, login);
 
-        if (!email) {
-            return missingFieldResponse(res, 'Email');
-        }
-
-        if (!password) {
-            return missingFieldResponse(res, 'Password');
-
-        }
-
-        const user = await User.findOne({ email: email });
-
-        if (!user) {
-            return invalidCredentialsResponse(res);
-        }
-
-        const passwordMatch = await bcrypt.compare(password, user.hashedPassword);
-
-        if (!passwordMatch) {
-            return invalidCredentialsResponse(res);
-        }
-
-        accessToken = jwt.sign({ _id: user._id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '15m' });
-
-        res.status(200).json({ accessToken: accessToken });
-    } catch (err) {
-        res.status(500).json(err.message);
-    }
-});
-
-router.get('/status', authMiddleware, (req, res) => {
-    res.status(200).json({ loggedIn: true, user: req.user });
-});
+router.get('/status', authMiddleware, checkAuthStatus);
 
 module.exports = router;

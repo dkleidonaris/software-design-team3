@@ -1,13 +1,13 @@
 # 📘 Software Design Course – Semester Project
 
 ## 🧑‍🤝‍🧑 Team Members
-| Name                  | Student Number | Role                                   |
-| --------------------- | -------------- | -------------------------------------- |
-| Athanasiou Dimitrios  | 3452           | Project Manager - Backend Developer    |
-| Gerakopoulos Christos | 3373           | Tester                                 |
-| Kleidonaris Dimitrios | 2850           | Backend Developer                      |
-| Blatsioti Christina   | 3405           | Frontend Developer                     |
-| Tsiftsis Theoklitos   | 3247           | Frontend Developer                     |
+| Name                  | Student Number | Role                              |
+| --------------------- | -------------- | --------------------------------- |
+| Athanasiou Dimitrios  | 3452           | UI/UX Designer & Database         |
+| Gerakopoulos Christos | 3373           | UI/UX Designer & Frontend         |
+| Kleidonaris Dimitrios | 2850           | Full-Stack Developer              |
+| Mplatsioti Christina  | 3405           | Database / Integration & Frontend |
+| Tsiftsis Theoklitos   | 3247           | Full-Stack Developer              |
 
 ---
 
@@ -35,16 +35,21 @@ Design and implement a full-stack web application that helps users track their d
 
 ## 🧪 Running the Project Locally
 
-1. Clone the repository  
+1. 📥 Clone the repository  
    ```bash
    git clone https://github.com/dkleidonaris/software-design-team3
+   cd software-design-team3
 
-2. Install dependencies
+2. 📦 Install dependencies 
    ```bash
    npm install
 
-3. Rename .env.example to .env
-
-4. Start the server
+3. ▶️ Run the Backend server
     ```bash
+    cd backend
+    npm run dev
+
+4. 💻 Run the Frontend server
+    ```bash
+    cd frontend
     npm run dev

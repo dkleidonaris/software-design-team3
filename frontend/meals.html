@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Diet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" src="/assets/js/meals.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            visibility: hidden;
+        }
+
+        .meal-image {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+    </style>
+    <script>
+        setTimeout(() => {
+        document.body.style.visibility = 'visible';
+        }, 400);
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div data-include="Header"></div>
+
+    <main class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">All meals</h2>
+            <a href="add-meal" class="btn btn-success">+ New Meal</a>
+        </div>
+        <div class="container mt-4">
+            <div class="row" id="meal-list"></div>
+            <div class="container mt-4">
+                <div class="row" id="meal-list"></div>
+
+                <!-- Spinner -->
+                <div class="d-flex justify-content-center my-4" id="meal-spinner">
+                    <div class="spinner-border" role="status"></div>
+                </div>
+                
+                <nav>
+                    <ul class="pagination justify-content-center mt-4" id="pagination"></ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div data-include="Footer"></div>
+
+</body>
+
+</html>

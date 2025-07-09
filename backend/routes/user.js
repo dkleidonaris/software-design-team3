@@ -1,16 +1,37 @@
 const router = require('express').Router();
-const User = require('../models/user');
-const bcrypt = require('bcrypt');
-const { authMiddleware } = require('../middleware/authMiddleware');
+const { authMiddleware,
+  authorizePersonalUserActionMiddleware
+} = require('../middleware/authMiddleware');
 
-//gia na testaroume mono - dinei olous tous users
-router.get('/', authMiddleware, async (req, res) => {
-  try {
-    const users = await User.find();
-    res.status(200).json(users);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+const {
+  createUser,
+  getUsers,
+  getUserById,
+  updateUser,
+  deleteUser,
+  updateCurrentUserDietPlan,
+  getCurrentUser
+} = require('../controllers/userController');
+
+const {
+  getDailyLogs,
+  getDailyLogByDate,
+} = require('../controllers/dailyLogController');
+
+router.post('/', createUser);
+router.get('/', authMiddleware, getUsers);
+
+// ✅ Specific routes first
+router.get('/current', authMiddleware, getCurrentUser);
+router.put('/current/dietPlan', authMiddleware, updateCurrentUserDietPlan);
+router.get('/current/dailyLogs', authMiddleware, getDailyLogs);
+router.get('/current/dailyLogs/byDate', authMiddleware, getDailyLogByDate);
+
+
+// 🔻 Dynamic routes after
+router.get('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, getUserById);
+router.put('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, updateUser);
+router.delete('/:userId', authMiddleware, authorizePersonalUserActionMiddleware, deleteUser);
+
 
 module.exports = router;

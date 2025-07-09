@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Edit Meal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" src="/assets/js/edit-meal.js"></script>
+    <style>
+        body {
+        visibility: hidden;
+        }
+    </style>
+    <script>
+        setTimeout(() => {
+        document.body.style.visibility = 'visible';
+        }, 400);
+    </script>
+</head>
+
+<body>
+
+    <div data-include="Header"></div>
+
+    <main class="container py-5">
+        <h2 class="mb-4">Edit Meal</h2>
+
+        <!-- Spinner while loading -->
+        <div id="meal-spinner" class="d-flex justify-content-center my-4">
+            <div class="spinner-border" role="status"></div>
+        </div>
+
+        <form id="edit-meal-form" style="display: none;">
+            <div class="mb-3">
+                <label class="form-label">Meal Name</label>
+                <input type="text" class="form-control" id="meal-name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Calories</label>
+                <input type="number" class="form-control" id="meal-calories" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fat (g)</label>
+                <input type="number" class="form-control" id="meal-fat" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Sugar (g)</label>
+                <input type="number" class="form-control" id="meal-sugar" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Protein (g)</label>
+                <input type="number" class="form-control" id="meal-protein" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Weight (g)</label>
+                <input type="number" class="form-control" id="meal-weight" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Category</label>
+                <input type="text" class="form-control" id="meal-category">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Image URL</label>
+                <input type="text" class="form-control" id="meal-img">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Items (comma-separated)</label>
+                <input type="text" class="form-control" id="meal-items">
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="save-btn">Save Changes</button>
+        </form>
+    </main>
+
+    <div data-include="Footer"></div>
+
+</body>
+
+</html>

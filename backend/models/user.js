@@ -1,16 +1,19 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
+const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema(
     {
-        firstName: { type: String, },
-        lastName: { type: String },
+        firstName: { type: String, required: true },
+        lastName: { type: String, required: true },
         email: { type: String, required: true, unique: true },
         hashedPassword: { type: String, required: true },
-        age: { type: Number },
-        gender: { type: String },
-        weight: { type: Number },
-        height: { type: Number },
+        age: { type: Number, required: true },
+        gender: { type: String, enum: ['male', 'female'], required: true },
+        weight: { type: Number, required: true }, //kg
+        height: { type: Number, required: true }, //cm
+        activityLevel: { type: String, enum: ['sedentary', 'light', 'moderate', 'very', 'extra'], required: true },
+        currentDietPlan: { type: Schema.Types.ObjectID, ref: 'dietPlan' }
     }
 );
 
@@ -24,6 +27,13 @@ userSchema.pre('save', async function (next) {
         next();
     } catch (err) {
         next(err);
+    }
+});
+
+userSchema.set('toJSON', {
+    transform: (doc, ret) => {
+        delete ret.hashedPassword;  // remove the hashedPassword field
+        return ret;
     }
 });
 
