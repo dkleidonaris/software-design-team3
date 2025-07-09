@@ -5,7 +5,7 @@ import { setTitle } from './helpers.js';
 import { ensureLoggedIn } from './auth.js';
 
 ensureLoggedIn();
-setTitle("My Diet");
+setTitle("My Diet Plan");
 
 let currentPlanId = null;
 
