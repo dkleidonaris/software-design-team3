@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (el) {
     setTimeout(() => {
       el.classList.add('visible');
-    }, 300); // μικρή καθυστέρηση για smooth feel
+    }, 300);
   }
 });
 
