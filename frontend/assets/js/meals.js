@@ -12,7 +12,7 @@ setTitle("Meals");
 fetchAndRenderMeals();
 
 let allMeals = [];
-const itemsPerPage = 10;
+const itemsPerPage = 9;
 let currentPage = 1;
 
 function fetchAndRenderMeals() {

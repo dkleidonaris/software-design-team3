@@ -147,12 +147,16 @@ $(document).ready(function () {
                 }
 
                 plans.forEach(plan => {
-                    const planCard = `
-                        <div class="plan-card">
-                            <a href="?id=${plan._id}" class="plan-title">${plan.title}</a>
-                            <div class="plan-description">${plan.description || 'No description provided.'}</div>
+                   const planCard = `
+                        <div class="card shadow-sm mb-4 p-3 border-0 rounded-3" style="background-color: #f5f8f7;">
+                            <div class="d-flex flex-column">
+                            <h5 class="fw-bold text-success mb-1">${plan.title}</h5>
+                            <p class="text-muted mb-3" style="min-height: 40px;">${plan.description || 'No description provided.'}</p>
+                            <a href="?id=${plan._id}" class="btn btn-outline-success mt-auto align-self-start">View Plan →</a>
+                            </div>
                         </div>
                     `;
+
                     container.append(planCard);
                 });
             },
