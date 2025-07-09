@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (user.currentDietPlan && user.currentDietPlan._id) {
       window.location.href = `/plans?id=${user.currentDietPlan._id}`;
     } else {
-      window.location.href = '/my-diet.html';
+      window.location.href = '/my-diet-plan.html';
     }
   } catch (err) {
     console.error('Error fetching user or diet plan:', err);
-    window.location.href = '/my-diet.html';
+    window.location.href = '/my-diet-plan.html';
   }
 });
