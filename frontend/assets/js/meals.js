@@ -91,5 +91,6 @@ function renderPagination() {
         currentPage = Number($(this).data('page'));
         renderMealsPage(currentPage);
         renderPagination();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
