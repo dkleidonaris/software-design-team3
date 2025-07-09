@@ -1,0 +1,790 @@
+[{
+  "_id": {
+    "$oid": "686014fbb9dcc761acf44b7c"
+  },
+  "title": "Rapid Weight Loss Plan",
+  "description": "A 7-day plan designed to support safe, sustainable fat loss using nutrient-dense, lower-calorie meals.",
+  "targetGoal": 1100,
+  "baseTdee": 1500,
+  "schedule": [
+    {
+      "day": "Monday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b66"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b63"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b62"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6d"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b57"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b5f"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b78"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6e"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b7a"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b59"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6c"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b5c"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b60"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b72"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b75"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b5b"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b64"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6b"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b53"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b74"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b58"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "686014fbb9dcc761acf44c20"
+  },
+  "title": "Balanced Maintenance Plan",
+  "description": "A nutritionally balanced 7‑day plan for weight maintenance.",
+  "targetGoal": 1000,
+  "baseTdee": 1000,
+  "schedule": [
+    {
+      "day": "Monday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c02"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b65"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c05"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b56"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c06"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6d"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c08"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b5d"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b60"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b63"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c07"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6c"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c01"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b5c"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b70"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c0a"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b68"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b5f"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6e"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b77"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6b"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "686014fbb9dcc761acf44c30"
+  },
+  "title": "Lean Muscle Gain Plan",
+  "description": "Higher‑protein 7‑day plan aimed at lean mass accretion.",
+  "targetGoal": 2200,
+  "baseTdee": 2000,
+  "schedule": [
+    {
+      "day": "Monday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b76"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b68"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c09"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c04"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b5f"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6a"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b79"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c03"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b60"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c02"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b5b"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b70"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b56"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c07"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6b"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c08"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b5e"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b68"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c0a"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6f"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b72"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "686ebb0ef96482a35e587b49"
+  },
+  "title": "Vegetarian Diet Plan",
+  "description": "A plant-based diet plan focusing on vegetables, fruits, legumes, and whole grains.",
+  "targetGoal": 1030,
+  "baseTdee": 1030,
+  "schedule": [
+    {
+      "day": "Monday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6c"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6d"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6f"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b75"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c01"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c06"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6c"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6d"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6f"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b75"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c01"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c06"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6c"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6d"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6f"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b75"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c01"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44c06"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6c"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6d"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "68601455b9dcc761acf44b6f"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "686ebc31f96482a35e587b4b"
+  },
+  "title": "Keto Diet Plan",
+  "description": "A low-carb, high-fat diet plan designed to promote ketosis and help burn fat.",
+  "targetGoal": 1400,
+  "baseTdee": 1600,
+  "schedule": [
+    {
+      "day": "Monday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b38"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b39"
+      }
+    },
+    {
+      "day": "Monday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3a"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3b"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3c"
+      }
+    },
+    {
+      "day": "Tuesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3d"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b38"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b39"
+      }
+    },
+    {
+      "day": "Wednesday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3a"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3b"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3c"
+      }
+    },
+    {
+      "day": "Thursday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3d"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b38"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b39"
+      }
+    },
+    {
+      "day": "Friday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3a"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3b"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3c"
+      }
+    },
+    {
+      "day": "Saturday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3d"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "morning",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b38"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "noon",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b39"
+      }
+    },
+    {
+      "day": "Sunday",
+      "timeOfDay": "evening",
+      "meal": {
+        "$oid": "686eb48cf96482a35e587b3a"
+      }
+    }
+  ]
+}]

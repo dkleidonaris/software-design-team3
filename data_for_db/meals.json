@@ -1,0 +1,1183 @@
+[{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b53"
+  },
+  "name": "Grilled Cheese Sandwich",
+  "calories": 370,
+  "sugar": 3,
+  "fat": 21,
+  "protein": 12,
+  "weight": 180,
+  "category": "Carbs",
+  "img": "/assets/img/image41.png",
+  "items": [
+    "White Bread",
+    "Cheddar Cheese",
+    "Butter"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b54"
+  },
+  "name": "Scrambled Eggs and Toast",
+  "calories": 310,
+  "sugar": 2,
+  "fat": 18,
+  "protein": 15,
+  "weight": 170,
+  "category": "Protein",
+  "img": "/assets/img/image42.png",
+  "items": [
+    "Eggs",
+    "Whole Grain Toast",
+    "Butter",
+    "Salt"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b55"
+  },
+  "name": "Chicken Burrito Bowl",
+  "calories": 480,
+  "sugar": 5,
+  "fat": 14,
+  "protein": 32,
+  "weight": 300,
+  "category": "Protein",
+  "img": "/assets/img/image43.png",
+  "items": [
+    "Grilled Chicken",
+    "Rice",
+    "Black Beans",
+    "Corn",
+    "Salsa"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b56"
+  },
+  "name": "Greek Yogurt Parfait",
+  "calories": 280,
+  "sugar": 12,
+  "fat": 6,
+  "protein": 15,
+  "weight": 200,
+  "category": "Fats",
+  "img": "/assets/img/image44.png",
+  "items": [
+    "Greek Yogurt",
+    "Granola",
+    "Berries",
+    "Honey"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b57"
+  },
+  "name": "Veggie Omelette",
+  "calories": 260,
+  "sugar": 3,
+  "fat": 17,
+  "protein": 16,
+  "weight": 180,
+  "category": "Protein",
+  "img": "/assets/img/image45.png",
+  "items": [
+    "Eggs",
+    "Bell Peppers",
+    "Spinach",
+    "Onion",
+    "Cheese"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b58"
+  },
+  "name": "Pita with Hummus and Veggies",
+  "calories": 310,
+  "sugar": 4,
+  "fat": 11,
+  "protein": 9,
+  "weight": 200,
+  "category": "Carbs",
+  "img": "/assets/img/image46.png",
+  "items": [
+    "Whole Wheat Pita",
+    "Hummus",
+    "Cucumber",
+    "Carrot",
+    "Bell Pepper"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b59"
+  },
+  "name": "Spicy Tuna Sushi Roll",
+  "calories": 330,
+  "sugar": 3,
+  "fat": 8,
+  "protein": 20,
+  "weight": 180,
+  "category": "Protein",
+  "img": "/assets/img/image47.png",
+  "items": [
+    "Sushi Rice",
+    "Nori",
+    "Tuna",
+    "Spicy Mayo",
+    "Cucumber"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b5a"
+  },
+  "name": "Margherita Pizza Slice",
+  "calories": 290,
+  "sugar": 2,
+  "fat": 10,
+  "protein": 11,
+  "weight": 150,
+  "category": "Carbs",
+  "img": "/assets/img/image48.png",
+  "items": [
+    "Pizza Dough",
+    "Tomato Sauce",
+    "Mozzarella",
+    "Basil"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b5b"
+  },
+  "name": "Asian Chicken Lettuce Wraps",
+  "calories": 320,
+  "sugar": 4,
+  "fat": 11,
+  "protein": 24,
+  "weight": 190,
+  "category": "Protein",
+  "img": "/assets/img/image49.png",
+  "items": [
+    "Ground Chicken",
+    "Lettuce",
+    "Soy Sauce",
+    "Carrot",
+    "Garlic"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b5c"
+  },
+  "name": "Baked Sweet Potato with Beans",
+  "calories": 350,
+  "sugar": 8,
+  "fat": 7,
+  "protein": 11,
+  "weight": 250,
+  "category": "Carbs",
+  "img": "/assets/img/image50.png",
+  "items": [
+    "Sweet Potato",
+    "Black Beans",
+    "Greek Yogurt",
+    "Chives"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b5d"
+  },
+  "name": "Caprese Salad",
+  "calories": 240,
+  "sugar": 4,
+  "fat": 16,
+  "protein": 9,
+  "weight": 160,
+  "category": "Vegetables",
+  "img": "/assets/img/image51.png",
+  "items": [
+    "Tomato",
+    "Mozzarella",
+    "Basil",
+    "Olive Oil"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b5e"
+  },
+  "name": "Banana Peanut Butter Wrap",
+  "calories": 310,
+  "sugar": 9,
+  "fat": 14,
+  "protein": 8,
+  "weight": 180,
+  "category": "Fats",
+  "img": "/assets/img/image52.png",
+  "items": [
+    "Whole Wheat Tortilla",
+    "Banana",
+    "Peanut Butter"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b5f"
+  },
+  "name": "Beef and Broccoli Stir Fry",
+  "calories": 420,
+  "sugar": 5,
+  "fat": 15,
+  "protein": 28,
+  "weight": 260,
+  "category": "Protein",
+  "img": "/assets/img/image53.png",
+  "items": [
+    "Beef",
+    "Broccoli",
+    "Soy Sauce",
+    "Garlic",
+    "Rice"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b60"
+  },
+  "name": "Avocado Chicken Wrap",
+  "calories": 410,
+  "sugar": 3,
+  "fat": 18,
+  "protein": 26,
+  "weight": 250,
+  "category": "Protein",
+  "img": "/assets/img/image54.png",
+  "items": [
+    "Tortilla",
+    "Grilled Chicken",
+    "Avocado",
+    "Lettuce",
+    "Tomato"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b61"
+  },
+  "name": "Tuna Salad Sandwich",
+  "calories": 350,
+  "sugar": 3,
+  "fat": 12,
+  "protein": 20,
+  "weight": 190,
+  "category": "Protein",
+  "img": "/assets/img/image55.png",
+  "items": [
+    "Whole Wheat Bread",
+    "Tuna",
+    "Mayo",
+    "Celery",
+    "Lettuce"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b62"
+  },
+  "name": "Mac and Cheese",
+  "calories": 450,
+  "sugar": 4,
+  "fat": 22,
+  "protein": 13,
+  "weight": 260,
+  "category": "Carbs",
+  "img": "/assets/img/image56.png",
+  "items": [
+    "Pasta",
+    "Cheddar Cheese",
+    "Milk",
+    "Butter"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b63"
+  },
+  "name": "Chickpea Avocado Toast",
+  "calories": 300,
+  "sugar": 3,
+  "fat": 14,
+  "protein": 10,
+  "weight": 180,
+  "category": "Carbs",
+  "img": "/assets/img/image57.png",
+  "items": [
+    "Whole Grain Bread",
+    "Avocado",
+    "Chickpeas",
+    "Lemon Juice"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b64"
+  },
+  "name": "Bulgur Tabbouleh",
+  "calories": 260,
+  "sugar": 3,
+  "fat": 8,
+  "protein": 6,
+  "weight": 200,
+  "category": "Vegetables",
+  "img": "/assets/img/image58.png",
+  "items": [
+    "Bulgur",
+    "Parsley",
+    "Tomato",
+    "Cucumber",
+    "Lemon"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b65"
+  },
+  "name": "Egg Fried Rice",
+  "calories": 390,
+  "sugar": 3,
+  "fat": 11,
+  "protein": 13,
+  "weight": 240,
+  "category": "Carbs",
+  "img": "/assets/img/image59.png",
+  "items": [
+    "Rice",
+    "Eggs",
+    "Peas",
+    "Carrots",
+    "Soy Sauce"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b66"
+  },
+  "name": "Dal with Rice",
+  "calories": 370,
+  "sugar": 3,
+  "fat": 10,
+  "protein": 16,
+  "weight": 270,
+  "category": "Protein",
+  "img": "/assets/img/image60.png",
+  "items": [
+    "Lentils",
+    "Rice",
+    "Turmeric",
+    "Garlic",
+    "Ginger"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b67"
+  },
+  "name": "Spinach and Ricotta Stuffed Shells",
+  "calories": 390,
+  "sugar": 5,
+  "fat": 13,
+  "protein": 17,
+  "weight": 220,
+  "category": "Carbs",
+  "img": "/assets/img/image61.png",
+  "items": [
+    "Pasta Shells",
+    "Spinach",
+    "Ricotta",
+    "Marinara"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b68"
+  },
+  "name": "Pulled Pork Sandwich",
+  "calories": 480,
+  "sugar": 6,
+  "fat": 20,
+  "protein": 30,
+  "weight": 280,
+  "category": "Protein",
+  "img": "/assets/img/image62.png",
+  "items": [
+    "Pork",
+    "BBQ Sauce",
+    "Bun",
+    "Pickles"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b69"
+  },
+  "name": "Veggie Quesadilla",
+  "calories": 380,
+  "sugar": 4,
+  "fat": 17,
+  "protein": 12,
+  "weight": 200,
+  "category": "Carbs",
+  "img": "/assets/img/image63.png",
+  "items": [
+    "Tortilla",
+    "Cheese",
+    "Bell Peppers",
+    "Onion",
+    "Zucchini"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b6a"
+  },
+  "name": "Bibimbap",
+  "calories": 450,
+  "sugar": 5,
+  "fat": 12,
+  "protein": 22,
+  "weight": 280,
+  "category": "Protein",
+  "img": "/assets/img/image64.png",
+  "items": [
+    "Rice",
+    "Egg",
+    "Beef",
+    "Spinach",
+    "Gochujang"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b6b"
+  },
+  "name": "Salmon Poke Bowl",
+  "calories": 420,
+  "sugar": 5,
+  "fat": 15,
+  "protein": 24,
+  "weight": 260,
+  "category": "Protein",
+  "img": "/assets/img/image65.png",
+  "items": [
+    "Rice",
+    "Salmon",
+    "Avocado",
+    "Cucumber",
+    "Soy Sauce"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b6c"
+  },
+  "name": "Lentil Sloppy Joe",
+  "calories": 350,
+  "sugar": 6,
+  "fat": 9,
+  "protein": 18,
+  "weight": 210,
+  "category": "Protein",
+  "img": "/assets/img/image66.png",
+  "items": [
+    "Lentils",
+    "Tomato Sauce",
+    "Onion",
+    "Whole Wheat Bun"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b6d"
+  },
+  "name": "Broccoli Cheese Baked Potato",
+  "calories": 370,
+  "sugar": 4,
+  "fat": 14,
+  "protein": 13,
+  "weight": 250,
+  "category": "Carbs",
+  "img": "/assets/img/image67.png",
+  "items": [
+    "Potato",
+    "Broccoli",
+    "Cheddar",
+    "Butter"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b6e"
+  },
+  "name": "Cottage Cheese with Pineapple",
+  "calories": 240,
+  "sugar": 10,
+  "fat": 5,
+  "protein": 18,
+  "weight": 180,
+  "category": "Fats",
+  "img": "/assets/img/image68.png",
+  "items": [
+    "Cottage Cheese",
+    "Pineapple Chunks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b6f"
+  },
+  "name": "Roasted Veggie Bowl",
+  "calories": 310,
+  "sugar": 6,
+  "fat": 12,
+  "protein": 8,
+  "weight": 220,
+  "category": "Vegetables",
+  "img": "/assets/img/image69.png",
+  "items": [
+    "Zucchini",
+    "Carrot",
+    "Red Onion",
+    "Sweet Potato",
+    "Olive Oil"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b70"
+  },
+  "name": "Turkey Meatballs with Marinara",
+  "calories": 360,
+  "sugar": 4,
+  "fat": 15,
+  "protein": 26,
+  "weight": 240,
+  "category": "Protein",
+  "img": "/assets/img/image70.png",
+  "items": [
+    "Turkey",
+    "Breadcrumbs",
+    "Egg",
+    "Marinara",
+    "Parsley"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b71"
+  },
+  "name": "Eggplant Parmesan",
+  "calories": 390,
+  "sugar": 6,
+  "fat": 18,
+  "protein": 14,
+  "weight": 260,
+  "category": "Vegetables",
+  "img": "/assets/img/image71.png",
+  "items": [
+    "Eggplant",
+    "Tomato Sauce",
+    "Mozzarella",
+    "Parmesan",
+    "Breadcrumbs"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b72"
+  },
+  "name": "Taco Rice Bowl",
+  "calories": 430,
+  "sugar": 5,
+  "fat": 17,
+  "protein": 22,
+  "weight": 290,
+  "category": "Carbs",
+  "img": "/assets/img/image72.png",
+  "items": [
+    "Rice",
+    "Ground Beef",
+    "Corn",
+    "Salsa",
+    "Cheddar"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b73"
+  },
+  "name": "Cucumber and Egg Salad Sandwich",
+  "calories": 320,
+  "sugar": 4,
+  "fat": 11,
+  "protein": 13,
+  "weight": 180,
+  "category": "Protein",
+  "img": "/assets/img/image73.png",
+  "items": [
+    "Whole Wheat Bread",
+    "Eggs",
+    "Cucumber",
+    "Mayo",
+    "Lettuce"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b74"
+  },
+  "name": "Chicken Caesar Wrap",
+  "calories": 400,
+  "sugar": 3,
+  "fat": 18,
+  "protein": 28,
+  "weight": 230,
+  "category": "Protein",
+  "img": "/assets/img/image74.png",
+  "items": [
+    "Grilled Chicken",
+    "Romaine Lettuce",
+    "Whole Wheat Wrap",
+    "Caesar Dressing",
+    "Parmesan"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b75"
+  },
+  "name": "Tofu Buddha Bowl",
+  "calories": 360,
+  "sugar": 5,
+  "fat": 14,
+  "protein": 20,
+  "weight": 250,
+  "category": "Protein",
+  "img": "/assets/img/image75.png",
+  "items": [
+    "Tofu",
+    "Brown Rice",
+    "Avocado",
+    "Edamame",
+    "Spinach"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b76"
+  },
+  "name": "Breakfast Burrito",
+  "calories": 430,
+  "sugar": 3,
+  "fat": 20,
+  "protein": 22,
+  "weight": 260,
+  "category": "Carbs",
+  "img": "/assets/img/image76.png",
+  "items": [
+    "Tortilla",
+    "Eggs",
+    "Cheddar",
+    "Black Beans",
+    "Salsa"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b77"
+  },
+  "name": "Roasted Chickpea Salad",
+  "calories": 310,
+  "sugar": 4,
+  "fat": 11,
+  "protein": 13,
+  "weight": 220,
+  "category": "Vegetables",
+  "img": "/assets/img/image77.png",
+  "items": [
+    "Chickpeas",
+    "Kale",
+    "Carrot",
+    "Cucumber",
+    "Tahini Dressing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b78"
+  },
+  "name": "Grilled Veggie Panini",
+  "calories": 390,
+  "sugar": 6,
+  "fat": 13,
+  "protein": 15,
+  "weight": 240,
+  "category": "Carbs",
+  "img": "/assets/img/image78.png",
+  "items": [
+    "Ciabatta Bread",
+    "Zucchini",
+    "Bell Peppers",
+    "Mozzarella",
+    "Pesto"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b79"
+  },
+  "name": "Egg Salad Sandwich",
+  "calories": 340,
+  "sugar": 3,
+  "fat": 16,
+  "protein": 14,
+  "weight": 210,
+  "category": "Protein",
+  "img": "/assets/img/image79.png",
+  "items": [
+    "Boiled Eggs",
+    "Mayo",
+    "Mustard",
+    "Whole Wheat Bread",
+    "Lettuce"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44b7a"
+  },
+  "name": "Peanut Soba Noodles",
+  "calories": 420,
+  "sugar": 6,
+  "fat": 17,
+  "protein": 16,
+  "weight": 270,
+  "category": "Fats",
+  "img": "/assets/img/image80.png",
+  "items": [
+    "Soba Noodles",
+    "Peanut Sauce",
+    "Cabbage",
+    "Carrot",
+    "Green Onion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c01"
+  },
+  "name": "Quinoa Chickpea Salad",
+  "calories": 330,
+  "sugar": 4,
+  "fat": 9,
+  "protein": 13,
+  "weight": 260,
+  "category": "Vegetables",
+  "img": "/assets/img/image81.png",
+  "items": [
+    "Quinoa",
+    "Chickpeas",
+    "Cucumber",
+    "Tomato",
+    "Parsley"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c02"
+  },
+  "name": "Almond Butter Oatmeal",
+  "calories": 380,
+  "sugar": 8,
+  "fat": 14,
+  "protein": 11,
+  "weight": 240,
+  "category": "Carbs",
+  "img": "/assets/img/image82.png",
+  "items": [
+    "Rolled Oats",
+    "Almond Butter",
+    "Banana",
+    "Honey"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c03"
+  },
+  "name": "Shrimp Stir‑Fry Noodles",
+  "calories": 440,
+  "sugar": 5,
+  "fat": 12,
+  "protein": 28,
+  "weight": 300,
+  "category": "Protein",
+  "img": "/assets/img/image83.png",
+  "items": [
+    "Rice Noodles",
+    "Shrimp",
+    "Broccoli",
+    "Soy Sauce",
+    "Ginger"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c04"
+  },
+  "name": "Berry Spinach Smoothie",
+  "calories": 260,
+  "sugar": 18,
+  "fat": 6,
+  "protein": 12,
+  "weight": 350,
+  "category": "Fats",
+  "img": "/assets/img/image84.png",
+  "items": [
+    "Spinach",
+    "Mixed Berries",
+    "Greek Yogurt",
+    "Almond Milk"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c05"
+  },
+  "name": "Turkey Avocado Sandwich",
+  "calories": 410,
+  "sugar": 4,
+  "fat": 15,
+  "protein": 25,
+  "weight": 220,
+  "category": "Protein",
+  "img": "/assets/img/image85.png",
+  "items": [
+    "Whole Wheat Bread",
+    "Turkey Breast",
+    "Avocado",
+    "Lettuce"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c06"
+  },
+  "name": "Mediterranean Lentil Soup",
+  "calories": 340,
+  "sugar": 7,
+  "fat": 8,
+  "protein": 17,
+  "weight": 300,
+  "category": "Vegetables",
+  "img": "/assets/img/image86.png",
+  "items": [
+    "Lentils",
+    "Tomato",
+    "Carrot",
+    "Celery",
+    "Olive Oil"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c07"
+  },
+  "name": "Pesto Chicken Pasta",
+  "calories": 480,
+  "sugar": 3,
+  "fat": 16,
+  "protein": 29,
+  "weight": 310,
+  "category": "Carbs",
+  "img": "/assets/img/image87.png",
+  "items": [
+    "Pasta",
+    "Grilled Chicken",
+    "Basil Pesto",
+    "Tomatoes"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c08"
+  },
+  "name": "Apple Walnut Yogurt Bowl",
+  "calories": 300,
+  "sugar": 14,
+  "fat": 10,
+  "protein": 13,
+  "weight": 220,
+  "category": "Fats",
+  "img": "/assets/img/image88.png",
+  "items": [
+    "Greek Yogurt",
+    "Apple",
+    "Walnuts",
+    "Cinnamon"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c09"
+  },
+  "name": "Salmon & Quinoa Pilaf",
+  "calories": 460,
+  "sugar": 3,
+  "fat": 18,
+  "protein": 32,
+  "weight": 290,
+  "category": "Protein",
+  "img": "/assets/img/image89.png",
+  "items": [
+    "Salmon",
+    "Quinoa",
+    "Spinach",
+    "Lemon"
+  ]
+},
+{
+  "_id": {
+    "$oid": "68601455b9dcc761acf44c0a"
+  },
+  "name": "Chocolate Protein Pancakes",
+  "calories": 390,
+  "sugar": 7,
+  "fat": 9,
+  "protein": 25,
+  "weight": 260,
+  "category": "Carbs",
+  "img": "/assets/img/image90.png",
+  "items": [
+    "Oat Flour",
+    "Eggs",
+    "Cocoa Powder",
+    "Protein Powder",
+    "Maple Syrup"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6861a62b5e676c676d9a7929"
+  },
+  "name": "Test",
+  "calories": 12,
+  "sugar": 2,
+  "fat": 12,
+  "protein": 23,
+  "weight": 4,
+  "category": "Test",
+  "img": "",
+  "items": [
+    ""
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6861a68e5e676c676d9a792c"
+  },
+  "name": "Duck with pasta",
+  "calories": 2,
+  "sugar": 35,
+  "fat": 3,
+  "protein": 3,
+  "weight": 3,
+  "category": "Carbs",
+  "img": "/assets/img/image91.png",
+  "items": [
+    "Duck",
+    "Pasta"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686eb48cf96482a35e587b38"
+  },
+  "name": "Cheddar & Spinach Omelette",
+  "calories": 450,
+  "sugar": 2,
+  "fat": 35,
+  "protein": 28,
+  "weight": 250,
+  "category": "protein",
+  "img": "/assets/img/image99.png",
+  "items": [
+    "Eggs",
+    "Cheddar cheese",
+    "Spinach",
+    "Butter"
+  ]
+},
+{
+  "_id": {
+    "$oid": "686eb48cf96482a35e587b39"
+  },
+  "name": "Keto Pancakes with Almond Flour",
+  "calories": 400,
+  "sugar": 3,
+  "fat": 32,
+  "protein": 20,
+  "weight": 220,
+  "category": "fat",
+  "img": "/assets/img/image100.png",
+  "items": [
+    "Almond flour",
+    "Eggs",
+    "Cream cheese",
+    "Butter"
+  ]
+},
+{
+  "_id": {
+    "$oid": "686eb48cf96482a35e587b3a"
+  },
+  "name": "Avocado Bacon Egg Bowl",
+  "calories": 500,
+  "sugar": 1,
+  "fat": 40,
+  "protein": 25,
+  "weight": 300,
+  "category": "fat",
+  "img": "/assets/img/image101.png",
+  "items": [
+    "Avocado",
+    "Bacon",
+    "Eggs",
+    "Olive oil"
+  ]
+},
+{
+  "_id": {
+    "$oid": "686eb48cf96482a35e587b3b"
+  },
+  "name": "Zucchini Noodles with Pesto Chicken",
+  "calories": 550,
+  "sugar": 4,
+  "fat": 35,
+  "protein": 40,
+  "weight": 350,
+  "category": "protein",
+  "img": "/assets/img/image102.png",
+  "items": [
+    "Zucchini noodles",
+    "Chicken breast",
+    "Pesto sauce",
+    "Parmesan"
+  ]
+},
+{
+  "_id": {
+    "$oid": "686eb48cf96482a35e587b3c"
+  },
+  "name": "Beef Lettuce Wraps",
+  "calories": 600,
+  "sugar": 3,
+  "fat": 38,
+  "protein": 45,
+  "weight": 300,
+  "category": "protein",
+  "img": "/assets/img/image103.png",
+  "items": [
+    "Ground beef",
+    "Lettuce leaves",
+    "Avocado",
+    "Sour cream"
+  ]
+},
+{
+  "_id": {
+    "$oid": "686eb48cf96482a35e587b3d"
+  },
+  "name": "Cauliflower Fried Rice with Shrimp",
+  "calories": 500,
+  "sugar": 5,
+  "fat": 20,
+  "protein": 35,
+  "weight": 350,
+  "category": "protein",
+  "img": "/assets/img/image104.png",
+  "items": [
+    "Cauliflower rice",
+    "Shrimp",
+    "Soy sauce",
+    "Green onion",
+    "Sesame oil"
+  ]
+},
+{
+  "_id": {
+    "$oid": "686eb48cf96482a35e587b3e"
+  },
+  "name": "Creamy Tuscan Salmon",
+  "calories": 650,
+  "sugar": 3,
+  "fat": 45,
+  "protein": 40,
+  "weight": 320,
+  "category": "fat",
+  "img": "/assets/img/image72.png",
+  "items": [
+    "Salmon fillet",
+    "Spinach",
+    "Sun-dried tomatoes",
+    "Heavy cream"
+  ]
+},
+{
+  "_id": {
+    "$oid": "686eb48cf96482a35e587b3f"
+  },
+  "name": "Garlic Butter Steak with Broccoli",
+  "calories": 700,
+  "sugar": 2,
+  "fat": 50,
+  "protein": 50,
+  "weight": 400,
+  "category": "protein",
+  "img": "/assets/img/image73.png",
+  "items": [
+    "Ribeye steak",
+    "Broccoli",
+    "Garlic",
+    "Butter"
+  ]
+},
+{
+  "_id": {
+    "$oid": "686eb48cf96482a35e587b40"
+  },
+  "name": "Buffalo Chicken Casserole",
+  "calories": 600,
+  "sugar": 3,
+  "fat": 35,
+  "protein": 45,
+  "weight": 350,
+  "category": "protein",
+  "img": "/assets/img/image74.png",
+  "items": [
+    "Shredded chicken",
+    "Cream cheese",
+    "Hot sauce",
+    "Cheddar cheese"
+  ]
+}]
