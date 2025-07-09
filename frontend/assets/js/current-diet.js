@@ -1,3 +1,5 @@
+import './main.js';
+
 import { API_URL } from './config.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
