@@ -93,4 +93,3 @@ function renderPagination() {
         renderPagination();
     });
 }
-
