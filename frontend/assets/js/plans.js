@@ -62,7 +62,7 @@ $(document).ready(function () {
                                 html += `<td style="font-size: 0.9rem; text-align: left;">
                                     <strong>${meal.name}</strong><br/>
                                     <small>Calories: ${(meal.calories * multiplier).toFixed(0)} kcal</small><br/>
-                                    <small>Protein: ${(meal.protein * multiplier).toFixed(1)} g</small><br/>
+                                    <small>Weight: ${(meal.weight * multiplier).toFixed(0)} g</small><br/>
                                     <ul style="padding-left: 15px; margin-bottom: 0;">${itemsList}</ul>
                                 </td>`;
                             } else {
@@ -98,7 +98,6 @@ $(document).ready(function () {
                         <button id="adjustPlanBtn" class="btn btn-outline-primary w-100 mt-2">Modify plan to my needs</button>
                     </div>
                 `;
-
 
                 container.html(`
                     <div class="plan-details">
