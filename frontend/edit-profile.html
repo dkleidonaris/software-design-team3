@@ -24,21 +24,26 @@
     <div data-include="Header"></div>
 
     <main class="container py-5">
-        <h2 class="mb-4">Edit Your Profile</h2>
+        <h2 class="text-success fw-bold mb-4">✏️ Edit Your Profile</h2>
+
 
         <div id="user-spinner" class="d-flex justify-content-center my-4">
             <div class="spinner-border" role="status"></div>
         </div>
 
-        <form id="edit-user-form" style="display: none;">
-            <div class="mb-3">
+        <div class="card shadow-sm p-4 border-0 rounded-3" style="background-color: #f5f8f7;" id="edit-user-form" style="display: none;">
+            <h4 class="text-success fw-bold mb-3">👤 Profile Information</h4>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
                 <label class="form-label">First Name</label>
                 <input type="text" class="form-control" id="firstName" required>
-            </div>
+                </div>
 
-            <div class="mb-3">
+                <div class="col-md-6 mb-3">
                 <label class="form-label">Last Name</label>
                 <input type="text" class="form-control" id="lastName" required>
+                </div>
             </div>
 
             <div class="mb-3">
@@ -46,64 +51,64 @@
                 <input type="email" class="form-control" id="email" required>
             </div>
 
-            <div class="mb-3">
+            <div class="row">
+                <div class="col-md-4 mb-3">
                 <label class="form-label">Age</label>
                 <input type="number" class="form-control" id="age" required>
-            </div>
-
-            <div class="mb-3">
+                </div>
+                <div class="col-md-4 mb-3">
                 <label class="form-label">Gender</label>
-                <select class="form-control" id="gender" required>
+                <select class="form-select" id="gender" required>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Weight (kg)</label>
-                <input type="number" class="form-control" id="weight" required>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Height (cm)</label>
-                <input type="number" class="form-control" id="height" required>
-            </div>
-
-            <div class="mb-3">
+                </div>
+                <div class="col-md-4 mb-3">
                 <label class="form-label">Activity Level</label>
-                <select class="form-control" id="activityLevel" required>
+                <select class="form-select" id="activityLevel" required>
                     <option value="sedentary">Sedentary (little or no exercise)</option>
                     <option value="light">Light (1–3 days/week)</option>
                     <option value="moderate">Moderate (3–5 days/week)</option>
                     <option value="very">Very (6–7 days/week)</option>
                     <option value="extra">Extra (intense training, physical job)</option>
                 </select>
-            </div>
+                </div>
+        </div>
 
-            <div class="mb-3">
-                <label class="form-label">New Password</label>
-                <input type="password" class="form-control" id="password"
-                    placeholder="Leave blank to keep current password">
-            </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Weight (kg)</label>
+      <input type="number" class="form-control" id="weight" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label class="form-label">Height (cm)</label>
+      <input type="number" class="form-control" id="height" required>
+    </div>
+  </div>
 
-            <button type="submit" class="btn btn-primary" id="save-btn">Save Changes</button>
-        </form>
+  <div class="mb-3">
+    <label class="form-label">New Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Leave blank to keep current password">
+  </div>
+
+  <button type="submit" class="btn btn-outline-success w-100 mt-3" id="save-btn">💾 Save Changes</button>
+</div>
+
 
         <!-- Calorie Intake Display Section -->
         <div id="calorie-info" class="mt-5" style="display: none;">
-            <h4 class="mb-3">Daily Calorie Needs</h4>
-            <div class="card">
-                <div class="card-body">
-                    <p class="mb-2">Based on your profile information, your estimated daily calorie needs for maintaining weight are:</p>
-                    <div class="d-flex align-items-center">
-                        <h3 class="me-3" id="calorie-value">0</h3>
-                        <span>calories per day</span>
-                    </div>
-                    <p class="text-muted mt-2 mb-1"><small>This is calculated using the Mifflin-St Jeor Equation.</small></p>
-                    <p class="text-muted mb-0"><small>Note: This is an estimate. Individual needs may vary.</small></p>
+            <h4 class="text-success fw-bold mb-3">🔥 Daily Calorie Needs</h4>
+            <div class="card border-0 shadow-sm p-3 rounded-3" style="background-color: #e6f2ea;">
+                <p class="mb-2">Based on your profile, your estimated daily calorie needs are:</p>
+                <div class="d-flex align-items-center">
+                <h2 class="text-primary me-2" id="calorie-value">0</h2>
+                <span>kcal/day</span>
                 </div>
+                <p class="text-muted mt-2"><small>Calculated using Mifflin-St Jeor Equation.</small></p>
+                <p class="text-muted mb-0"><small>*This is an estimate. Results may vary.</small></p>
             </div>
         </div>
+
     </main>
 
     <div data-include="Footer"></div>
