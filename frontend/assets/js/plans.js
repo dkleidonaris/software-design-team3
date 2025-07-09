@@ -17,60 +17,96 @@ $(document).ready(function () {
             url: `${API_URL}/dietPlans/${planId}`,
             method: "GET",
             success: function (plan) {
-                const scheduleByDay = {};
+                const days = [
+                    { name: 'Monday', color: '#f8bbd0' },
+                    { name: 'Tuesday', color: '#ce93d8' },
+                    { name: 'Wednesday', color: '#81d4fa' },
+                    { name: 'Thursday', color: '#a5d6a7' },
+                    { name: 'Friday', color: '#fff59d' },
+                    { name: 'Saturday', color: '#ffcc80' },
+                    { name: 'Sunday', color: '#90caf9' },
+                ];
+
+                const timesOfDay = ['morning', 'noon', 'evening'];
+
+                const scheduleMap = {};
+                for (const dayObj of days) {
+                    scheduleMap[dayObj.name] = { morning: null, noon: null, evening: null };
+                }
+
                 plan.schedule.forEach(entry => {
-                    if (!scheduleByDay[entry.day]) {
-                        scheduleByDay[entry.day] = [];
+                    const day = entry.day;
+                    const time = entry.timeOfDay.toLowerCase();
+                    if (scheduleMap[day]) {
+                        scheduleMap[day][time] = entry;
                     }
-                    scheduleByDay[entry.day].push(entry);
                 });
 
-                function generateScheduleHtml(multiplier = 1) {
-                    let html = '';
-                    for (const [day, entries] of Object.entries(scheduleByDay)) {
-                        html += `<h5 class="mt-3">${day}</h5><ul class="list-group mb-2">`;
-                        entries.forEach(entry => {
-                            const meal = entry.meal;
-                            if (meal) {
+                function generateScheduleHtmlTable(multiplier = 1) {
+                    let html = '<table class="table table-bordered text-center align-middle" style="table-layout: fixed;">';
+
+                    html += '<thead><tr><th></th>';
+                    days.forEach(dayObj => {
+                        html += `<th style="background-color: ${dayObj.color}; font-weight: bold;">${dayObj.name}</th>`;
+                    });
+                    html += '</tr></thead>';
+
+                    html += '<tbody>';
+                    timesOfDay.forEach(time => {
+                        html += `<tr><th style="text-transform: capitalize;">${time}</th>`;
+                        days.forEach(dayObj => {
+                            const entry = scheduleMap[dayObj.name][time];
+                            if (entry && entry.meal) {
+                                const meal = entry.meal;
                                 const itemsList = meal.items.map(item => `<li>${item}</li>`).join('');
-                                html += `
-                                    <li class="list-group-item">
-                                        <div><strong>${entry.timeOfDay}</strong>: ${meal.name}</div>
-                                        <ul class="mb-1 small">
-                                            <li><strong>Calories:</strong> ${(meal.calories * multiplier).toFixed(0)} kcal</li>
-                                            <li><strong>Protein:</strong> ${(meal.protein * multiplier).toFixed(1)} g</li>
-                                            <li><strong>Fat:</strong> ${(meal.fat * multiplier).toFixed(1)} g</li>
-                                            <li><strong>Sugar:</strong> ${(meal.sugar * multiplier).toFixed(1)} g</li>
-                                            <li><strong>Weight:</strong> ${(meal.weight * multiplier).toFixed(0)} g</li>
-                                            <li><strong>Category:</strong> ${meal.category}</li>
-                                            <li><strong>Items:</strong>
-                                                <ul>${itemsList}</ul>
-                                            </li>
-                                        </ul>
-                                    </li>`;
+                                html += `<td style="font-size: 0.9rem; text-align: left;">
+                                    <strong>${meal.name}</strong><br/>
+                                    <small>Calories: ${(meal.calories * multiplier).toFixed(0)} kcal</small><br/>
+                                    <small>Protein: ${(meal.protein * multiplier).toFixed(1)} g</small><br/>
+                                    <ul style="padding-left: 15px; margin-bottom: 0;">${itemsList}</ul>
+                                </td>`;
+                            } else {
+                                html += '<td>-</td>';
                             }
                         });
-                        html += '</ul>';
-                    }
+                        html += '</tr>';
+                    });
+                    html += '</tbody></table>';
+
                     return html;
                 }
 
-                const scheduleHtml = generateScheduleHtml();
+                const scheduleHtml = generateScheduleHtmlTable();
 
                 const adjustHtml = `
-                    <div class="mb-3 mt-4">
-                        <label for="customCalories" class="form-label"><strong>Adjust calories (500 - 5000):</strong></label>
-                        <input type="number" id="customCalories" min="500" max="5000" class="form-control" placeholder="Enter desired daily calories">
-                        <button id="adjustPlanBtn" class="btn btn-primary mt-2">Modify plan to my needs</button>
+                    <div class="card p-4 mt-4 shadow-sm" style="background-color:rgb(202, 234, 210);">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <h6 class="text-muted mb-1">🎯 Target Calories</h6>
+                                <p class="fs-5 fw-bold text-primary">${plan.targetGoal} kcal</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-muted mb-1">⚙️ Base TDEE</h6>
+                                <p class="fs-5 fw-bold text-success">${plan.baseTdee} kcal</p>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="mb-2">
+                            <label for="customCalories" class="form-label"><strong>🔧 Adjust calories</strong> <small class="text-muted">(500 - 5000)</small></label>
+                            <input type="number" id="customCalories" min="500" max="5000" class="form-control" placeholder="Enter your desired daily calories">
+                        </div>
+                        <button id="adjustPlanBtn" class="btn btn-outline-primary w-100 mt-2">Modify plan to my needs</button>
                     </div>
                 `;
 
+
                 container.html(`
                     <div class="plan-details">
-                        <h2>${plan.title}</h2>
-                        <p>${plan.description || 'No description provided.'}</p>
-                        <p><strong>Target Calories:</strong> ${plan.targetGoal}</p>
-                        <p><strong>Base TDEE:</strong> ${plan.baseTdee}</p>
+                        <div class="mb-4 p-3 rounded shadow-sm" style="background-color:rgb(223, 231, 226);">
+                            <h2 class="fw-bold text-success mb-2" style="font-size: 1.8rem;">${plan.title}</h2>
+                            <p class="text-muted mb-0" style="font-size: 1rem;">${plan.description || 'No description provided.'}</p>
+                        </div>
+
                         ${adjustHtml}
                         <div class="mt-4">
                             <h4>Weekly Schedule</h4>
@@ -89,7 +125,7 @@ $(document).ready(function () {
                         return;
                     }
                     const multiplier = customCalories / plan.baseTdee;
-                    const updatedHtml = generateScheduleHtml(multiplier);
+                    const updatedHtml = generateScheduleHtmlTable(multiplier);
                     $("#scheduleContent").html(updatedHtml);
                 });
             },
